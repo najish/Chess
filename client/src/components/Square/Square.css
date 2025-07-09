@@ -1,0 +1,22 @@
+.Square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  font-size: 2.5vmin;
+  user-select: none;
+  transition: background 0.2s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Square--white {
+  background-color: #eeeed2;
+}
+
+.Square--black {
+  background-color: #769656;
+}

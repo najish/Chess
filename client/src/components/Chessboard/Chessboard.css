@@ -1,36 +1,49 @@
 li {
-    list-style-type: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
 .Chessboard {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.square {
-    height: 100%;
-    width: 100%;
-}
-
-.black {
-    background-color: black;
-}
-
-.white {
-    background-color: white;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
 }
 
 .Chessboard-squares {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    width: 90vw;
-    max-width: 90vh;
-    height: 90vw;
-    max-height: 90vh;
-    aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 90vmin;
+  height: 90vmin;
+  aspect-ratio: 1 / 1;
+  border: 4px solid #333;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  background: #222;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vmin;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  transition: background 0.2s;
+}
+
+.black {
+  background-color: #769656;
+}
+
+.white {
+  background-color: #eeeed2;
 }
