@@ -1,0 +1,36 @@
+li {
+    list-style-type: none;
+}
+.Chessboard {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.Chessboard-squares {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 90vw;
+    max-width: 90vh;
+    height: 90vw;
+    max-height: 90vh;
+    aspect-ratio: 1 / 1;
+}
